@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>La protection des données personnelles</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+			<div id="wrapper">
+
+					<div id="main">
+						<div class="inner">
+
+								<header id="header">
+									<a href="Sommaire.html" class="logo"><strong>La protection des données personnelles</strong> simplifiée au possible</a>
+								</header>
+
+								<section>
+									<header class="main">
+										<h1>Cryptage des données</h1>
+									</header>
+
+									<span class="image main"><img src="images/Cryptage.jpg" alt="" /></span>
+
+									<p>Regardons de quelle manière la CNIL s'est intéressée au cryptage.</p>
+
+									<hr class="major" />
+
+									<h2>Comment la CNIL définit le cryptage ?</h2>
+									<p>Les fonctions de hachage permettent d’assurer l’intégrité des données. Les signatures numériques, en plus d’assurer l’intégrité, permettent de  vérifier l’origine de l’information  et son authenticité. Enfin, le chiffrement, parfois improprement appelé cryptage, permet de garantir la confidentialité d’un message.</p>
+
+									<hr class="major" />
+
+									<h2>Les précautions à prendre selon la CNIL :</h2>
+									<p>Utiliser un algorithme reconnu et sûr :
+										<ul>
+											<li>SHA-256, SHA-512 ou SHA-3 comme fonction de hachage.</li>
+											<li>HMAC utilisant SHA-256, bcrypt, scrypt ou PBKDF2 pour stocker les mots de passe.</li>
+											<li>AES ou AES-CBC pour le chiffrement symétrique.</li>
+											<li>RSA-OAEP comme défini dans PKCS#1 v2.1 pour le chiffrement asymétrique.</li>
+											<li>RSA-SSA-PSS comme spécifié dans PKCS#1 v2.1 pour les signatures.</li>
+										</ul>
+									Utiliser les tailles de clés suffisantes, pour AES il est recommandé d’utiliser des clés de 128 bits et, pour les algorithmes basés sur RSA, des modules et exposants secrets d’au moins 2048 bits ou 3072 bits, avec des exposants publics, pour le chiffrement, supérieurs à 65536.</br></br>
+									Protéger les clés secrètes, au minimum par la mise en œuvre de droits d’accès restrictifs et d’un mot   de passe sûr.</br></br>
+									Rédiger une procédure indiquant la manière dont les clés et certificats vont être gérés en prenant en compte les cas d’oubli de mot de passe de déverrouillage.
+									</p>
+
+									<hr class="major" />
+
+									<h2>Ce que la CNIL recommande de ne pas faire :</h2>
+									<p>Utiliser des algorithmes obsolètes, comme les chiffrements DES et 3DES ou les fonctions de hachage MD5 et SHA1.</br></br>
+									Confondre fonction de hachage et chiffrement et considérer qu’une fonction de hachage seule est suffisante pour assurer la confidentialité d’une donnée. Bien que les fonctions de hachages soient des fonctions <i>"à sens unique"</i>, c’est à dire des fonctions difficiles à inverser, une donnée peut être retrouvée à partir de son empreinte. Ces fonctions étant rapides à utiliser, il est souvent possible de tester automatiquement toutes les possibilités et ainsi de reconnaître l’empreinte.</p>
+								</section>
+
+						</div>
+					</div>
+
+					<div id="sidebar">
+						<div class="inner">
+
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Rechercher" />
+									</form>
+								</section>
+
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="Accueil.html">Page d'accueil</a></li>
+										<li><a href="Sommaire.html">Sommaire</a></li>
+										<li><a href="Notion.html">Notion</a></li>
+										<li><a href="Histoire.html">Histoire</a></li>
+										<li><a href="Pub.html">Publicité ciblée</a></li>
+										<li><a href="Surveillance.html">Surveillance WEB</a></li>
+										<li>
+											<span class="opener">Cryptage des données</span>
+											<ul>
+												<li><a href="Cryptage 1.html">Qu'est ce que c'est ?</a></li>
+												<li><a href="Cryptage 2.html">Les recommandations de la CNIL</a></li>
+												<li><a href="Cryptage 3.html">L'essor des VPN</a></li>
+												<li><a href="Cryptage 4.html">L'importance des mises à jour</a></li>	
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Outils juridiques</span>
+											<ul>
+												<li><a href="Outils 1.html">Les apports du RGPD</a></li>
+												<li><a href="Outils 2.html">Le droit à l'oubli</a></li>
+											</ul>
+										</li>
+										<li><a href="Sources.html">Sources</a></li>
+									</ul>
+								</nav>
+
+
+						</div>
+					</div>
+
+			</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
